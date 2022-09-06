@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$font-family-sans-serif:'Space Grotesk', sans-serif;
+
+$primary: hsl(278, 68%, 11%);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.img-front{  
+   
+    width: 100%;
+    margin-top: 80px;
+    translate: 100px;
+    position: relative;
+   
+}
+@include media-breakpoint-down(md) {
+
+    .img-main{
+        background-image: url(./images/bg-main-mobile.png);
+        height: 200px;
+        width: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+    }
+    .img-front{
+        margin-top: -40px;
+        translate: 10px;
+        position: relative;
+
+    }
+    .card-logo{
+        width: 40px;
+        
+    }
+    .font-small{
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width:400px) {
+    
+
+
+    .aa{
+        align-self: end;
+    }
+    
+ }
+
+
+.text-back{
+ 
+    color: white;
+}
+.img-back{
+    width: auto;
+    translate: 200px;
+    position: relative;
+}
